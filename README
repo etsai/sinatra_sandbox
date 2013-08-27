@@ -10,3 +10,4 @@ Hypotheses to test:
 - GET requests can send inputs: True
 - You can embed views into views?
 - PUTS or PRINT for any ruby outputs always go to the terminal
+- You can have nested hashes in your input: True! (Need to explore this more.)
