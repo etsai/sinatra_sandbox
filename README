@@ -1,0 +1,12 @@
+This repo was used to play around with Sinatra. By experimenting in this repo, I was able to become more familiar with erb and the way you can create forms and send data and information to your application.
+
+One of the questions I had was what was the difference between GET and POST request when submitting a form through the webpage. While I understood that POST request was mainly for pushing data to the server, which is perfect for forms request, I wasn't quite sure this would work within the context of a GET request. Initially, I was always under the assumption that GET request just fetched and grabbed data from the server. It was getting something. Through this excercise, I found that you can still input information through a form and make a GET request, the input would just be put as a params in the URL like: www.example.com/get/?input. This would be the URL that you would then be fetching and so if additional information was at that designated URL you can get it. The POST request would not append params to the URL.
+
+The other experiment I played around with, was how to connect the input types in the form to Ruby code and then to erb that can be displayed. I did this by assigning the params to a variable. In my controller, I understand that I could then manipulate it in Ruby however I'd like, and then decide how I want to send it over to erb which is really cool. Not sure if that's the best way though. It just interesting to see how things can get passed back and forth from the view(as an input) to the controller back to the view(as an output). While these objects are being passed back and forth they may have to be changed around so that they are easier to work with.
+
+It was also interesting to see how the puts in within the controller code gets puts into the terminal not an actual website, which makes sense. This will be very helpful in testing.
+
+Hypotheses to test:
+- GET requests can send inputs: True
+- You can embed views into views?
+- PUTS or PRINT for any ruby outputs always go to the terminal
